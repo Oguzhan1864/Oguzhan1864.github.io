@@ -5,38 +5,47 @@
 
 #grid-box-home {
     display: grid;
+    grid-template-rows: minmax(10vh, auto) minmax(80vh, auto) minmax(10vh, auto);
+}
+
+p {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 #header {
     display: grid;
-    grid-template-columns:1 ;
-    grid-template-rows:1 ;
     width: 100vw;
     height: 10vh;
+    z-index: 10;
 }
 
 #logo-container {
     display: grid;
-    grid-template-columns:1 ;
-    grid-template-rows:1 ;
     align-items: center;
     justify-items: center;
     width: 100vw;
-    background-color: rgb(238, 192, 133);
+    background-color: #006491;
 }
 
 #hamburger-menu-container {
     display: grid;
-    grid-template-columns:1 ;
-    grid-template-rows:1 ;
     align-items: left;
     justify-items: left;
     z-index: 10;
-
 }
 
 #logo-image {
     display: grid;
+    max-width: 200px;
+    width: 20vw;
 }
 
 /* [ON BIG SCREEN] */
@@ -102,58 +111,103 @@
 
 #video-container {
     display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 1;
     align-items: center;
     justify-items: center;
     height: 80vh;
     width: 100vw;
-
 }
 
 #grid-box-menu {
   display: grid;
+  grid-template-rows: minmax(10vh, auto) minmax(80vh, auto) minmax(10vh, auto);
+}
+
+#content {
+  width: 100vw;
+  background-color: whitesmoke;
 }
 
 #pizza-picture {
   display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 1;
   align-items: center;
   justify-items: center;
 }
 
 #pizza-name {
   display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 1;
   align-items: center;
   justify-items: center;
+  width: auto;
+  background-color: rgb(235, 212, 212);
 }
 
 #pizza-description {
   display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 1;
+  text-align: center;
   align-items: center;
   justify-items: center;
+  width: auto;
+  background-color: rgb(235, 212, 212);
 }
 
 #pizza-price {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1;
+  grid-column-gap: 5px;
+  margin: 2px, 2px, 2px, 2px;
+}
+
+#small-pizza-price {
+  background-color: #f16277;;
+  display: inline-grid;
+  place-items: center;
+  align-items: center;
+  justify-items: center;
+}
+
+#medium-pizza-price {
+  background-color: #f16277;
+  display: inline-grid;
+  place-items: center;
+  align-items: center;
+  justify-items: center;
+}
+
+#large-pizza-price {
+  background-color: #f16277;
+  display: inline-grid;
+  place-items: center;
+  align-items: center;
+  justify-items: center;
+}
+
+#grid-box-about-us {
+  display: grid;
+  grid-template-rows: minmax(10vh, auto) minmax(80vh, auto) minmax(10vh, auto);
+}
+
+#about-us {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+#about-us-text {
+  background-color:whitesmoke;
+  text-align: center;
+}
+
+#map-link {
+  display: grid;
   align-items: center;
   justify-items: center;
 }
 
 #footer {
     display: grid;
-    grid-template-columns:1 ;
-    grid-template-rows:1 ;
     width: 100vw;
     height: 10vh;
     align-items: center;
     justify-items: center;
-    background-color: #796f5b;
+    background-color: #dbdbdb;
 }

@@ -6,41 +6,44 @@
 #grid-box-home {
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: minmax(10vh, auto) minmax(80vh, auto) minmax(10vh, auto);
+      grid-template-rows: minmax(10vh, auto) minmax(80vh, auto) minmax(10vh, auto);
+}
+
+p {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 #header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1;
-      grid-template-columns: 1;
-  -ms-grid-rows: 1;
-      grid-template-rows: 1;
   width: 100vw;
   height: 10vh;
+  z-index: 10;
 }
 
 #logo-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1;
-      grid-template-columns: 1;
-  -ms-grid-rows: 1;
-      grid-template-rows: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
   width: 100vw;
-  background-color: #eec085;
+  background-color: #006491;
 }
 
 #hamburger-menu-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1;
-      grid-template-columns: 1;
-  -ms-grid-rows: 1;
-      grid-template-rows: 1;
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
@@ -51,6 +54,8 @@
 #logo-image {
   display: -ms-grid;
   display: grid;
+  max-width: 200px;
+  width: 20vw;
 }
 
 /* [ON BIG SCREEN] */
@@ -118,10 +123,6 @@
 #video-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1;
-      grid-template-columns: 1;
-  -ms-grid-rows: 1;
-      grid-template-rows: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -133,15 +134,18 @@
 #grid-box-menu {
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: minmax(10vh, auto) minmax(80vh, auto) minmax(10vh, auto);
+      grid-template-rows: minmax(10vh, auto) minmax(80vh, auto) minmax(10vh, auto);
+}
+
+#content {
+  width: 100vw;
+  background-color: whitesmoke;
 }
 
 #pizza-picture {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1;
-      grid-template-columns: 1;
-  -ms-grid-rows: 1;
-      grid-template-rows: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -151,27 +155,24 @@
 #pizza-name {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1;
-      grid-template-columns: 1;
-  -ms-grid-rows: 1;
-      grid-template-rows: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
+  width: auto;
+  background-color: #ebd4d4;
 }
 
 #pizza-description {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1;
-      grid-template-columns: 1;
-  -ms-grid-rows: 1;
-      grid-template-rows: 1;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
+  width: auto;
+  background-color: #ebd4d4;
 }
 
 #pizza-price {
@@ -179,8 +180,67 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1;
-      grid-template-rows: 1;
+  grid-column-gap: 5px;
+  margin: 2px, 2px, 2px, 2px;
+}
+
+#small-pizza-price {
+  background-color: #f16277;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  place-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+#medium-pizza-price {
+  background-color: #f16277;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  place-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+#large-pizza-price {
+  background-color: #f16277;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  place-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+#grid-box-about-us {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: minmax(10vh, auto) minmax(80vh, auto) minmax(10vh, auto);
+      grid-template-rows: minmax(10vh, auto) minmax(80vh, auto) minmax(10vh, auto);
+}
+
+#about-us {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+#about-us-text {
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+#map-link {
+  display: -ms-grid;
+  display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -190,16 +250,12 @@
 #footer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1;
-      grid-template-columns: 1;
-  -ms-grid-rows: 1;
-      grid-template-rows: 1;
   width: 100vw;
   height: 10vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  background-color: #796f5b;
+  background-color: #dbdbdb;
 }
 /*# sourceMappingURL=style.css.map */
