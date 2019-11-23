@@ -1,11 +1,16 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
 }
 
 #grid-box-home {
-    display: grid;
-    grid-template-rows: minmax(10vh, auto) minmax(80vh, auto) minmax(10vh, auto);
+  display: grid;
+  grid-template-rows: minmax(10vh, auto) minmax(80vh, auto) minmax(10vh, auto);
+  background-color: whitesmoke;
 }
 
 p {
@@ -21,31 +26,30 @@ a {
 }
 
 #header {
-    display: grid;
-    width: 100vw;
-    height: 10vh;
-    z-index: 10;
+  display: grid;
+  width: 100vw;
+  height: 10vh;
+  z-index: 10;
 }
 
 #logo-container {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    width: 100vw;
-    background-color: #006491;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background-color: #006491;
 }
 
 #hamburger-menu-container {
-    display: grid;
-    align-items: left;
-    justify-items: left;
-    z-index: 10;
+  display: grid;
+  align-items: left;
+  justify-items: left;
+  z-index: 10;
 }
 
 #logo-image {
-    display: grid;
-    max-width: 200px;
-    width: 20vw;
+  display: grid;
+  max-width: 200px;
+  width: 40vw;
 }
 
 /* [ON BIG SCREEN] */
@@ -204,10 +208,10 @@ a {
 }
 
 #footer {
-    display: grid;
-    width: 100vw;
-    height: 10vh;
-    align-items: center;
-    justify-items: center;
-    background-color: #dbdbdb;
+  display: grid;
+  width: 100vw;
+  height: 10vh;
+  align-items: center;
+  justify-items: center;
+  background-color: #dbdbdb;
 }
