@@ -17,6 +17,11 @@ p {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+}
+
 h3 {
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -56,7 +61,7 @@ a {
 /* Wrapper */
 #page-nav {
     width: 100%;
-    background: rgb(248, 139, 127);
+    background: #e62d3a;
     /* If you want the navigation bar to stick on top
     position: sticky;
     top: 0;
@@ -90,7 +95,7 @@ a {
     #page-nav label {
       display: inline-block;
       color:rgb(0, 0, 0);
-      background: #d45650;
+      background: #006491;
       font-style: normal;
       font-size: 1.2em;
       padding: 10px;
@@ -113,12 +118,20 @@ a {
     }
 }
 
+
 #video-container {
     display: grid;
     align-items: center;
     justify-items: center;
     height: 80vh;
     width: 100vw;
+}
+
+#hours-of-operation {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
 }
 
 #grid-box-menu {
@@ -157,7 +170,9 @@ a {
 #pizza-price {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-column-gap: 5px;
+  grid-row-gap: 7px;
   margin: 2px, 2px, 2px, 2px;
 }
 
@@ -185,6 +200,14 @@ a {
   justify-items: center;
 }
 
+#order {
+  background-color: #006491;
+  display: inline-grid;
+  place-items: center;
+  align-items: center;
+  justify-items: center;
+}
+
 #grid-box-about-us {
   display: grid;
   grid-template-rows: minmax(10vh, auto) minmax(80vh, auto) minmax(10vh, auto);
@@ -192,12 +215,42 @@ a {
 
 #about-us {
   display: grid;
+  grid-template-rows: 6;
   align-items: center;
   justify-items: center;
 }
 
-#about-us-text {
-  background-color:whitesmoke;
+#about-us-1 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+#about-us-text-1 {
+  text-align: center;
+}
+
+#about-us-2 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+#about-us-text-2 {
+  text-align: center;
+}
+
+#about-us-3 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+#about-us-text-3 {
+  text-align: center;
+}
+
+#address {
   text-align: center;
 }
 
