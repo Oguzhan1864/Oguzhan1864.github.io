@@ -163,6 +163,11 @@ a {
   background-color: whitesmoke;
 }
 
+.menu-content {
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
 #pizza-picture {
   display: -ms-grid;
   display: grid;

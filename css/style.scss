@@ -144,6 +144,10 @@ a {
   background-color: whitesmoke;
 }
 
+.menu-content {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 #pizza-picture {
   display: grid;
   align-items: center;
