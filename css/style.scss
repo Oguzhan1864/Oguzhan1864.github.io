@@ -31,6 +31,10 @@ a {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+.colored-title {
+  color: darkblue;
+}
+
 #header {
   display: grid;
   width: 100vw;
@@ -40,9 +44,17 @@ a {
 
 #logo-container {
   display: grid;
+  text-align: center;
   align-items: center;
   justify-items: center;
   background-color: #006491;
+}
+
+#logo-image {
+  display: grid;
+  max-width: 200px;
+  width: auto;
+  height: 9vh;
 }
 
 #hamburger-menu-container {
@@ -50,12 +62,6 @@ a {
   align-items: left;
   justify-items: left;
   z-index: 10;
-}
-
-#logo-image {
-  display: grid;
-  max-width: 200px;
-  width: 40vw;
 }
 
 /* [ON BIG SCREEN] */
@@ -86,7 +92,7 @@ a {
     box-sizing: border-box;
   }
   #page-nav ul li a {
-    color: rgb(0, 0, 0);
+    color: white;
     text-decoration: none;
   }
   
@@ -95,7 +101,7 @@ a {
     /* Show Hamburger */
     #page-nav label {
       display: inline-block;
-      color:rgb(0, 0, 0);
+      color: white;
       background: #006491;
       font-style: normal;
       font-size: 1.2em;
@@ -107,7 +113,7 @@ a {
       display: block;
     }
     #page-nav ul li {
-      border-top: 1px solid #333;
+      border-top: 1px solid rgb(0, 0, 0);
     }
   
     /* Toggle show/hide menu on checkbox click */
@@ -140,44 +146,71 @@ a {
 }
 
 #content {
+  display: grid;
   width: 100vw;
+  margin-top: 10vh;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 2px;
   background-color: whitesmoke;
 }
 
-.menu-content {
-  grid-template-columns: 1fr 1fr 1fr;
+#menu-item-card {
+  display: block;
+  grid-template-rows: repeat(5, 1fr);
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+}
+
+#item-pic {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border-radius: 10px;
+}
+
+#order-button {
+  background-color: #006491;
+  display: inline-grid;
+  place-items: center;
+  align-items: center;
+  justify-items: center;
+  border-radius: 3px;
+}
+
+#pizza-nm {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  margin:0 15px;
+  width: auto;
+}
+
+#pizza-desc {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  margin:0 15px;
+  width: auto;
+}
+
+#pizza-prc {
+  display: grid;
+  padding: 0 15px;
+  width: auto;
 }
 
 #pizza-picture {
   display: grid;
   align-items: center;
   justify-items: center;
+  border-radius: 10px;
 }
 
-#pizza-name {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  width: auto;
-  background-color: rgb(235, 212, 212);
-}
-
-#pizza-description {
-  display: grid;
-  text-align: center;
-  align-items: center;
-  justify-items: center;
-  width: auto;
-  background-color: rgb(235, 212, 212);
-}
-
-#pizza-price {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-column-gap: 5px;
-  grid-row-gap: 7px;
-  margin: 2px, 2px, 2px, 2px;
+.menu-item-picture {
+  border-radius: 10px;
 }
 
 #small-pizza-price {
@@ -222,6 +255,10 @@ a {
   grid-template-rows: 6;
   align-items: center;
   justify-items: center;
+}
+
+.about-us-text {
+  padding: 0 15px;
 }
 
 #about-us-1 {
