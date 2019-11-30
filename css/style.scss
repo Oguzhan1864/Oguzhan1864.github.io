@@ -9,12 +9,18 @@ body {
 
 #grid-box-home {
   display: grid;
-  grid-template-rows: minmax(10vh, auto) minmax(80vh, auto) minmax(10vh, auto);
+  grid-template-rows: minmax(20vh, auto) minmax(70vh, auto) minmax(10vh, auto);
   background-color: whitesmoke;
 }
 
 p {
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: italic;
+  color: #cf1926;
 }
 
 h2 {
@@ -44,6 +50,7 @@ a {
 
 #logo-container {
   display: grid;
+  width: 100vw;
   text-align: center;
   align-items: center;
   justify-items: center;
@@ -52,7 +59,7 @@ a {
 
 #logo-image {
   display: grid;
-  max-width: 200px;
+  max-width: auto;
   width: auto;
   height: 9vh;
 }
@@ -67,7 +74,7 @@ a {
 /* [ON BIG SCREEN] */
 /* Wrapper */
 #page-nav {
-    width: 100%;
+    width: 100vw;
     background: #e62d3a;
     /* If you want the navigation bar to stick on top
     position: sticky;
@@ -129,37 +136,54 @@ a {
     display: grid;
     align-items: center;
     justify-items: center;
-    height: 80vh;
-    width: 100vw;
 }
 
 #hours-of-operation {
-  display: grid;
   text-align: center;
   align-items: center;
   justify-items: center;
+  margin: 2vh;
 }
 
 #grid-box-menu {
   display: grid;
-  grid-template-rows: minmax(10vh, auto) minmax(80vh, auto) minmax(10vh, auto);
+  width: 100vw;
+  grid-template-rows: minmax(20vh, auto) minmax(70vh, auto)
 }
 
 #content {
   display: grid;
-  width: 100vw;
-  margin-top: 10vh;
-  grid-template-columns: repeat(5, 1fr);
-  column-gap: 2px;
+  width: auto;
+  grid-template-columns: 1fr;
+  grid-gap: 4px;
   background-color: whitesmoke;
 }
 
 #menu-item-card {
   display: block;
-  grid-template-rows: repeat(5, 1fr);
+  width: auto;
   text-align: center;
   align-items: center;
   justify-items: center;
+  border: 2px solid #e62d3a;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 15px;
+}
+
+#pizza-prc-small {
+  color: #492de6;
+  font-weight: bold;
+}
+
+#pizza-prc-medium {
+  color: #492de6;
+  font-weight: bold;
+}
+
+#pizza-prc-large {
+  color: #492de6;
+  font-weight: bold;
 }
 
 #item-pic {
@@ -167,14 +191,17 @@ a {
   align-items: center;
   justify-items: center;
   border-radius: 10px;
+  margin: auto;
+  box-shadow: 7px 7px 5px grey;
 }
 
 #order-button {
   background-color: #006491;
-  display: inline-grid;
+  display: grid;
   place-items: center;
   align-items: center;
   justify-items: center;
+  margin-top: 2vh;
   border-radius: 3px;
 }
 
@@ -183,7 +210,8 @@ a {
   text-align: center;
   align-items: center;
   justify-items: center;
-  margin:0 15px;
+  margin-top: 2vh;
+  margin: 15px;
   width: auto;
 }
 
@@ -196,54 +224,6 @@ a {
   width: auto;
 }
 
-#pizza-prc {
-  display: grid;
-  padding: 0 15px;
-  width: auto;
-}
-
-#pizza-picture {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  border-radius: 10px;
-}
-
-.menu-item-picture {
-  border-radius: 10px;
-}
-
-#small-pizza-price {
-  background-color: #f16277;;
-  display: inline-grid;
-  place-items: center;
-  align-items: center;
-  justify-items: center;
-}
-
-#medium-pizza-price {
-  background-color: #f16277;
-  display: inline-grid;
-  place-items: center;
-  align-items: center;
-  justify-items: center;
-}
-
-#large-pizza-price {
-  background-color: #f16277;
-  display: inline-grid;
-  place-items: center;
-  align-items: center;
-  justify-items: center;
-}
-
-#order {
-  background-color: #006491;
-  display: inline-grid;
-  place-items: center;
-  align-items: center;
-  justify-items: center;
-}
 
 #grid-box-about-us {
   display: grid;
@@ -265,6 +245,12 @@ a {
   display: grid;
   align-items: center;
   justify-items: center;
+  margin-top: 10vh;
+}
+
+.about-us-pic {
+  box-shadow: 7px 7px 5px grey;
+  border-radius: 5px;
 }
 
 #about-us-text-1 {
@@ -293,12 +279,14 @@ a {
 
 #address {
   text-align: center;
+  margin: 2vh;
 }
 
 #map-link {
   display: grid;
   align-items: center;
   justify-items: center;
+  margin-bottom: 3vh;
 }
 
 #footer {
@@ -309,3 +297,26 @@ a {
   justify-items: center;
   background-color: #dbdbdb;
 }
+
+@media(min-width:768px) {
+  a[href^="tel:"] {
+   pointer-events: none;
+  }
+ }
+
+@media screen and (max-width: 400px) {
+  .menu-item-card {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .menu-item-card {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
