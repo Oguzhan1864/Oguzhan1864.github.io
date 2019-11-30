@@ -43,7 +43,7 @@ a {
   color: darkblue;
 }
 
-#header {
+.header {
   display: -ms-grid;
   display: grid;
   width: 100vw;
@@ -51,7 +51,7 @@ a {
   z-index: 10;
 }
 
-#logo-container {
+.logo-container {
   display: -ms-grid;
   display: grid;
   width: 100vw;
@@ -63,7 +63,7 @@ a {
   background-color: #006491;
 }
 
-#logo-image {
+.logo-image {
   display: -ms-grid;
   display: grid;
   max-width: auto;
@@ -71,7 +71,7 @@ a {
   height: 9vh;
 }
 
-#hamburger-menu-container {
+.hamburger-menu-container {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: left;
@@ -81,23 +81,15 @@ a {
   z-index: 10;
 }
 
-/* [ON BIG SCREEN] */
-/* Wrapper */
 #page-nav {
   width: 100vw;
   background: #e62d3a;
-  /* If you want the navigation bar to stick on top
-    position: sticky;
-    top: 0;
-    */
 }
 
-/* Hide Hamburger */
 #page-nav label, #hamburger {
   display: none;
 }
 
-/* Menu Items */
 #page-nav ul {
   list-style-type: none;
   margin: 0;
@@ -116,9 +108,7 @@ a {
   text-decoration: none;
 }
 
-/* [ON SMALL SCREENS] */
 @media screen and (max-width: 768px) {
-  /* Show Hamburger */
   #page-nav label {
     display: inline-block;
     color: white;
@@ -127,14 +117,12 @@ a {
     font-size: 1.2em;
     padding: 10px;
   }
-  /* Break down menu items into vertical */
   #page-nav ul li {
     display: block;
   }
   #page-nav ul li {
     border-top: 1px solid black;
   }
-  /* Toggle show/hide menu on checkbox click */
   #page-nav ul {
     display: none;
   }
@@ -143,7 +131,7 @@ a {
   }
 }
 
-#video-container {
+.video-container {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -152,7 +140,16 @@ a {
   justify-items: center;
 }
 
-#hours-of-operation {
+#hours-of-operation-home {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  margin: 2vh;
+}
+
+#hours-of-operation-about-us {
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -179,7 +176,7 @@ a {
   background-color: whitesmoke;
 }
 
-#menu-item-card {
+.menu-item-card {
   display: block;
   width: auto;
   text-align: center;
@@ -193,22 +190,7 @@ a {
   margin: 15px;
 }
 
-#pizza-prc-small {
-  color: #492de6;
-  font-weight: bold;
-}
-
-#pizza-prc-medium {
-  color: #492de6;
-  font-weight: bold;
-}
-
-#pizza-prc-large {
-  color: #492de6;
-  font-weight: bold;
-}
-
-#item-pic {
+.item-picture {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -221,7 +203,7 @@ a {
           box-shadow: 7px 7px 5px grey;
 }
 
-#order-button {
+.order-button {
   background-color: #006491;
   display: -ms-grid;
   display: grid;
@@ -234,7 +216,7 @@ a {
   border-radius: 3px;
 }
 
-#pizza-nm {
+.pizza-name {
   display: -ms-grid;
   display: grid;
   text-align: center;
@@ -247,7 +229,7 @@ a {
   width: auto;
 }
 
-#pizza-desc {
+.pizza-description {
   display: -ms-grid;
   display: grid;
   text-align: center;
@@ -257,6 +239,21 @@ a {
   justify-items: center;
   margin: 0 15px;
   width: auto;
+}
+
+.pizza-price-small {
+  color: #492de6;
+  font-weight: bold;
+}
+
+.pizza-price-medium {
+  color: #492de6;
+  font-weight: bold;
+}
+
+.pizza-price-large {
+  color: #492de6;
+  font-weight: bold;
 }
 
 #grid-box-about-us {
@@ -279,6 +276,7 @@ a {
 
 .about-us-text {
   padding: 0 15px;
+  text-align: center;
 }
 
 #about-us-1 {
@@ -297,10 +295,6 @@ a {
   border-radius: 5px;
 }
 
-#about-us-text-1 {
-  text-align: center;
-}
-
 #about-us-2 {
   display: -ms-grid;
   display: grid;
@@ -310,10 +304,6 @@ a {
   justify-items: center;
 }
 
-#about-us-text-2 {
-  text-align: center;
-}
-
 #about-us-3 {
   display: -ms-grid;
   display: grid;
@@ -321,10 +311,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-}
-
-#about-us-text-3 {
-  text-align: center;
 }
 
 #address {
@@ -357,26 +343,6 @@ a {
 @media (min-width: 768px) {
   a[href^="tel:"] {
     pointer-events: none;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .menu-item-card {
-    width: 100vw;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .menu-item-card {
-    width: 100vw;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
   }
 }
 /*# sourceMappingURL=style.css.map */
