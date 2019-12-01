@@ -41,6 +41,7 @@ a {
 
 .colored-title {
   color: darkblue;
+  text-align: center;
 }
 
 .header {
@@ -274,19 +275,33 @@ a {
   justify-items: center;
 }
 
-.about-us-text {
-  padding: 0 15px;
-  text-align: center;
-}
-
 #about-us-1 {
-  display: -ms-grid;
-  display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
   margin-top: 10vh;
+}
+
+#about-us-picture-1 {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#about-us-picture-2 {
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#about-us-picture-3 {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .about-us-pic {
@@ -295,22 +310,9 @@ a {
   border-radius: 5px;
 }
 
-#about-us-2 {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-}
-
-#about-us-3 {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
+.about-us-text {
+  text-align: start;
+  margin: 1vw;
 }
 
 #address {
